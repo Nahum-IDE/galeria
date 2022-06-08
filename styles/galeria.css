@@ -1,0 +1,145 @@
+*{
+    margin: 0; /* Quita todo el margen entre los elementos*/
+    padding: 0; /* Quita todo el relleno*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Mozila */
+    -o-box-sizing: border-box; /* Chrome*/
+    -ms-box-sizing: border-box; /* Microsoft*/
+}
+:root{
+  --primary: #0d7377;
+  --secondary: hsl(0, 0%, 20%);
+  --complement: #212121;
+  --base: #14ffec;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;/*lineas horizontales*/
+}
+li>a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li>a:hover:not(.active){
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+.titulo{
+    text-align: center;
+    background-size: contain;
+    font-size: 80px;
+}
+body{
+    background: #e48257 ;
+}
+#contenedor{
+    background-color: rgba(255, 255, 255, 0.5);
+    background: #f2edd7 ;
+    width: 70%;
+    margin: 30px auto;
+    padding:20px;
+    /*border: 2px solid #4CAF50;*/
+    overflow: hidden;
+}
+.art1, .art3, .art5, .art7{
+    width: 450px;
+    float: left;
+    margin: 10px;
+
+    border-bottom: 5px solid var(--primary);
+    animation: colors 6s infinite;
+}
+.art2, .art4, .art6{
+    width: 450px;
+    float: right;
+    margin: 10px;
+
+    border-bottom: 5px solid var(--primary);
+    animation: colors 6s infinite;
+}
+.Maravilla1{  
+    border: 2px solid black;
+    padding: 100px;
+    background: url(../imagenes/kukulcan.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .Maravilla2{  
+    border: 2px solid black;
+    padding: 100px;
+    background: url(../imagenes/gran_muralla.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+  }
+  .Maravilla3{  
+    border: 2px solid black;
+    padding: 100px;
+  /*  background: url(../imagenes/coliseo_roma.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 5px 10px #888888;
+  }
+  .Maravilla4{  
+    border: 2px solid black;
+    padding: 100px;
+    /*background: url(../imagenes/Machu_picchu.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 5px 10px #888888;
+  }
+  .Maravilla5{  
+    border: 2px solid black;
+    padding: 100px;
+    /*background: url(../imagenes/Taj-Mahal2.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 5px 10px #888888;
+  }
+  .Maravilla6{  
+    border: 2px solid black;
+    padding: 100px;
+   /* background: url(../imagenes/cristo_redentor.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 5px 10px #888888;
+  }
+  .Maravilla7{  
+    border: 2px solid black;
+    padding: 100px;
+   /* background: url(../imagenes/petra1.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 5px 10px #888888;
+  }
+
+.myicono {
+	color:rgb(255, 240, 240);
+	font-size: 1.5em;
+	padding: 10px;
+	display: none;
+	text-align: right;
+}
+
+@keyframes colors{
+  0%{border-color: var(--primary)}
+  25%{border-color: var(--complement)}
+  50%{border-color: var(--base)}
+  75%{border-color: var(--secondary)}
+  100%{border-color: var(--primary)}
+}

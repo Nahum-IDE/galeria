@@ -1,0 +1,127 @@
+*{
+    margin: 0; /* Quita todo el margen entre los elementos*/
+    padding: 0; /* Quita todo el relleno*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Mozila */
+    -o-box-sizing: border-box; /* Chrome*/
+    -ms-box-sizing: border-box; /* Microsoft*/
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width:100%;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;/*lineas horizontales*/
+}
+li>a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*para cuando paso el mouse*/
+li>a:hover:not(.active){
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;/*corlor del menu bar selection*/
+}
+body{
+    background-color: rgba(57, 50, 50, 0.7);/*Color del contenedor*/
+}
+#contenedor{
+    width: 70%;/*tamaño del contenedor*/
+    margin: 0px auto;
+    padding:20px;
+    overflow: hidden;
+}
+.titulo{
+    text-align: center;
+    background-size: contain;
+    font-size: 80px;
+}
+.maravilla1{  
+    padding: 200px;
+    background: url(../imagenes/kukulcan.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain; /*se ajusta al contenedor*/
+    background-attachment: scroll; /*Se mueve junto al contenedor*/
+  }
+.maravilla2{  
+    padding: 200px;
+    background: url(../imagenes/gran_muralla.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain; /*se ajusta al contenedor*/
+    background-attachment: scroll; /*Se mueve junto al contenedor*/
+  }
+  .maravilla3{  
+    padding: 200px;
+    background: url(../imagenes/coliseo_roma.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain; /*se ajusta al contenedor*/
+    background-attachment: scroll; /*Se mueve junto al contenedor*/
+  }
+  .maravilla4{  
+    padding: 200px;
+    background: url(../imagenes/Machu_picchu.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain; /*se ajusta al contenedor*/
+    background-attachment: scroll; /*Se mueve junto al contenedor*/
+  }
+  .maravilla5{  
+    padding: 200px;
+    background: url(../imagenes/Taj-Mahal2.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain; /*se ajusta al contenedor*/
+    background-attachment: scroll; /*Se mueve junto al contenedor*/
+  }
+  .maravilla6{  
+    padding: 200px;
+    background: url(../imagenes/cristo_redentor.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain; /*se ajusta al contenedor*/
+    background-attachment: scroll; /*Se mueve junto al contenedor*/
+  }
+  .maravilla7{  
+    padding: 200px;
+    background: url(../imagenes/petra1.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain; /*se ajusta al contenedor*/
+    background-attachment: scroll; /*Se mueve junto al contenedor*/
+  }
+.btn, .btn2{
+    display: inline-block;
+    padding: 40px 25px;
+    text-decoration: none;
+    top: 400px;/*Posicion del boton Altura*/
+    left: 95px;/*Posicion del boton Ancho*/
+    position: relative;
+    border: 5px solid white;/*borde y color del mismo*/
+    border-radius: 40px;/*forma del borde*/
+    background: url(../imagenes/i.png);
+    background-position:center;/*se ajusta al centro del boton*/
+    background-size: contain; /*se ajusta al contenedor*/
+    background-repeat: no-repeat;
+}
+.btn2{
+    left: 1245px;/*posicion del boton de forma vertical*/
+    background: url(../imagenes/d.png);/*imagen del boton*/
+    background-position:center;
+    background-size: contain; /*se ajusta al contenedor*/
+    background-repeat: no-repeat;/*para no repetir la imagen*/
+}

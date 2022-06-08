@@ -1,0 +1,40 @@
+*{
+    margin: 0; /* Quita todo el margen entre los elementos*/
+    padding: 0; /* Quita todo el relleno*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Mozila */
+    -o-box-sizing: border-box; /* Chrome*/
+    -ms-box-sizing: border-box; /* Microsoft*/
+}
+#contenedor{
+    background-color: #3a6351;
+    height: 100vh;
+}
+#txttitulo{
+    padding-top: 20vh;/*Mueve el titulo de forma horizontal*/
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+#btninicio{
+    border: 5px solid #ffff;
+    width: 10%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#img{
+    padding-top: 20vh;
+    background: url(../imagenes/portada.png);
+    background-position:center;
+    background-size: contain; /*se ajusta al contenedor*/
+    background-repeat: no-repeat;
+} 
